@@ -14,6 +14,7 @@ typedef long long ll;
 typedef pair<int, int> ii;
 typedef vector<ii> vii;
 typedef vector<int> vi;
+typedef vector<string> vs;
 
 #define dbg(x) std::cout << "==DEBUG==  " << #x << " = " << x << endl;
 #define sum(x) std::accumulate(x.begin(), x.end(), 0)
