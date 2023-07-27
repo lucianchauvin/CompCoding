@@ -15,11 +15,11 @@ typedef vector<pii> vii;
 typedef vector<int> vi;
 typedef vector<string> vs;
 
-#define dbg(x) cout << "==DEBUG==  " << #x << " = " << x << endl;
+#define dbg(x) cout << "==DEBUG==  " << #x << " = " << x << "\n";
 #define dbgv(x)                           \
     cout << "==DEBUG==  " << #x << " = "; \
     for (auto i : x) cout << i << " ";    \
-    cout << endl;
+    cout << "\n";
 #define sum(x) accumulate(x.begin(), x.end(), 0)
 #define sortLG(x) sort(x.begin(), x.end(), less<int>())
 #define sortGL(x) sort(x.begin(), x.end(), greater<int>())
@@ -28,9 +28,9 @@ typedef vector<string> vs;
 #define print(x) cout << x << endl;
 #define printall(x)                    \
     for (auto i : x) cout << i << " "; \
-    cout << endl;
-#define yes cout << "YES" << endl;
-#define no cout << "NO" << endl;
+    cout << "\n";
+#define yes cout << "YES" << "\n";
+#define no cout << "NO" << "\n";
 template<typename... T> void readin(T&... args) { ((cin >> args), ...); }
 
 int main(int argc, const char** argv) {
