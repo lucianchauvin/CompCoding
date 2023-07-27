@@ -31,7 +31,13 @@ typedef vector<string> vs;
     cout << endl;
 #define yes cout << "YES" << endl;
 #define no cout << "NO" << endl;
+template<typename... T> void readin(T&... args) { ((cin >> args), ...); }
 
 int main(int argc, const char** argv) {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    
+    
     return 0;
 }
