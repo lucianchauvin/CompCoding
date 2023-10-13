@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <cstdint>
 using namespace std;
 
 typedef long long ll;
@@ -17,7 +18,7 @@ typedef vector<string> vs;
 #define sortGL(x) sort(x.begin(), x.end(), greater<int>())
 #define reverse(x) reverse(x.begin(), x.end())
 #define foreach(i, x) for (auto i : x)
-#define print(x) cout << x << endl;
+#define print(x) cout << x << "\n";
 #define printall(x)                    \
     for (auto i : x) cout << i << " "; \
     cout << "\n";
@@ -34,6 +35,15 @@ int main(int argc, const char** argv) {
     int n;
     readin(n);
 
+    int s = 0, sm = 0, a;
+    for(int i = 0; i < n; i++){
+       readin(a);
+       s += a;
+       if( s < sm ) {
+        sm = s;
+       }
+    }
+    print(abs(sm))
     
 
     return 0;

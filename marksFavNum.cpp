@@ -31,10 +31,24 @@ void readin(T&... args) { ((cin >> args), ...); }
 int main(int argc, const char** argv) {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-    int n;
-    readin(n);
 
+    int high = 1000, low = 1, mid;
+    string status;
     
+    cout << (low+high)/2 << "\n";
+    readin(status);
+
+    while(status != "correct"){
+        mid = (low+high)/2;
+        if (status == "lower")
+            high = mid - 1;
+        else{
+            low = mid + 1;
+        }
+        cout << (low+high)/2 << "\n";
+        readin(status);
+    }
+
 
     return 0;
 }

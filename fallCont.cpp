@@ -17,7 +17,7 @@ typedef vector<string> vs;
 #define sortGL(x) sort(x.begin(), x.end(), greater<int>())
 #define reverse(x) reverse(x.begin(), x.end())
 #define foreach(i, x) for (auto i : x)
-#define print(x) cout << x << endl;
+#define print(x) cout << x << "\n";
 #define printall(x)                    \
     for (auto i : x) cout << i << " "; \
     cout << "\n";
@@ -31,8 +31,10 @@ void readin(T&... args) { ((cin >> args), ...); }
 int main(int argc, const char** argv) {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-    int n;
+    string n;
     readin(n);
+
+    print((n[0]==n[1] && n[1] ==n[2] && n[2] == '5'))
 
     
 
